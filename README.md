@@ -1,64 +1,31 @@
-# Dhanush S — Data × Intelligence Portfolio
+# Dhanush S — Signature Portfolio
 
-A creative, responsive personal portfolio built with **HTML, CSS and vanilla JavaScript**. It needs no framework, package installation or build step, so it can be deployed directly as a static site on Vercel.
+A responsive, static portfolio built with HTML, CSS and vanilla JavaScript. No framework, package installation or build command is required.
 
-## Design direction
+## Run locally
 
-- Dark editorial interface with a restrained lime, blue and violet accent palette.
-- Oversized typographic hero, profile-card composition, floating skill chips and scrolling skill marquee.
-- Python-style profile panel with a working copy-to-clipboard interaction.
-- Project cards with image previews, live-app links and GitHub repositories where supplied.
-- Custom RAG workflow diagram, categorized tech arsenal, learning roadmap and internship timeline.
-- Certificate gallery with a full-size preview modal.
-- Responsive mobile navigation, keyboard focus styles, reduced-motion support and scroll progress indicator.
-- Content remains visible if JavaScript fails; animations are progressively enabled only when supported.
-
-## Folder structure
-
-```text
-dhanush-premium-portfolio/
-├── index.html
-├── README.md
-├── vercel.json
-├── css/style.css
-├── js/main.js
-└── assets/
-    ├── favicon.svg
-    ├── dhanush-profile.png
-    ├── resume.pdf
-    ├── projects/
-    │   ├── agri-predict-preview.png
-    │   └── ai-health-chatbot-preview.png
-    └── certificates/
-        ├── be10x-ai-tools.jpg
-        ├── cit-orange-data-analytics.jpg
-        ├── gateway-internship.jpg
-        ├── ibm-ai-fundamentals.jpg
-        └── infosys-data-science-python.jpg
-```
-
-## Run locally on Windows
-
-1. Extract the ZIP.
-2. Open the extracted folder in VS Code.
-3. Open `index.html` directly, or use the Live Server extension.
-4. Keep `assets`, `css` and `js` next to `index.html`; the site uses relative paths.
+Open `index.html` in a browser. For a more accurate local preview, use VS Code Live Server.
 
 ## Deploy to Vercel
 
-1. Push the **contents** of this folder to the GitHub repository connected to Vercel.
-2. In Vercel, import the repository or trigger a new deployment.
-3. Set the Root Directory to the folder containing `index.html`.
-4. Select the static/Other framework preset and leave build and install commands empty.
-5. Deploy, then hard-refresh the live page with `Ctrl + F5`.
+1. Upload the contents of this folder to the root of the GitHub repository connected to Vercel.
+2. In Vercel, use **Other** as the framework preset if prompted.
+3. Leave the build command empty and use `.` as the output directory (or leave the default static output setting).
+4. Deploy, then hard-refresh the live site with `Ctrl + F5`.
 
-## Project links
+## Included interactions
 
-- AgriPredict: https://weatheragripredict.streamlit.app/
-- AI Health Chatbot: https://disawachatbot.streamlit.app/
-- GitHub: https://github.com/dhanush0823-git
-- LinkedIn: https://www.linkedin.com/in/dhanush-s-784190358/
+- Responsive sticky navigation with active section state
+- Scroll progress indicator and accessible reveal effects
+- Project filters for GenAI, ML/NLP, analytics and automation
+- Copyable developer-style profile snippet
+- Certificate viewer for images and PDF files
+- Subtle hero pointer movement, reduced-motion support and keyboard dismissal
 
-## Content note
+## Assets
 
-Content and metrics were based on the supplied resume and GitHub README. The resume lists graduation in 2026 and CGPA 8.05. Where a public project repository or deployment URL was not supplied, the card is presented as a project summary rather than inventing a link. Review dates and contact information before publishing.
+The portfolio uses the supplied profile photo, résumé, project previews and certificate images. The VCodez Data Science internship experience letter supplied on 16 October 2026 is included as `assets/certificates/vcodez-data-science-internship.pdf` and appears in the Credentials section. Its letter states the internship was completed from July 2025 to October 2025.
+
+## Accuracy note
+
+The project cards describe the supplied project summaries. Resume–Job Matching and NLP Sentiment Analysis are presented as project summaries rather than linked repositories because no repository URLs were supplied for those items.
