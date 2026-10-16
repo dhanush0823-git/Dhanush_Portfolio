@@ -1,16 +1,17 @@
-# Dhanush S — Premium Data Science & Applied AI Portfolio
+# Dhanush S — Data × Intelligence Portfolio
 
-A polished, responsive, static portfolio built with **HTML, CSS and vanilla JavaScript**. No Node.js, framework, package installation or build step is required.
+A creative, responsive personal portfolio built with **HTML, CSS and vanilla JavaScript**. It needs no framework, package installation or build step, so it can be deployed directly as a static site on Vercel.
 
-## What is included
+## Design direction
 
-- Editorial dark visual design with lime accents, responsive navigation and scroll progress.
-- Profile-photo hero, About section and categorized technical skills.
-- Live project cards for AgriPredict and AI Health Chatbot.
-- Portfolio projects spanning analytics, machine learning, NLP, semantic matching, RAG and Selenium automation.
-- Internship timeline, education, certificate gallery with full-size image viewer, and contact section.
-- Resume PDF, project preview images, certificate images and custom favicon.
-- SEO metadata, keyboard focus states and reduced-motion support.
+- Dark editorial interface with a restrained lime, blue and violet accent palette.
+- Oversized typographic hero, profile-card composition, floating skill chips and scrolling skill marquee.
+- Python-style profile panel with a working copy-to-clipboard interaction.
+- Project cards with image previews, live-app links and GitHub repositories where supplied.
+- Custom RAG workflow diagram, categorized tech arsenal, learning roadmap and internship timeline.
+- Certificate gallery with a full-size preview modal.
+- Responsive mobile navigation, keyboard focus styles, reduced-motion support and scroll progress indicator.
+- Content remains visible if JavaScript fails; animations are progressively enabled only when supported.
 
 ## Folder structure
 
@@ -19,10 +20,8 @@ dhanush-premium-portfolio/
 ├── index.html
 ├── README.md
 ├── vercel.json
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
+├── css/style.css
+├── js/main.js
 └── assets/
     ├── favicon.svg
     ├── dhanush-profile.png
@@ -41,33 +40,25 @@ dhanush-premium-portfolio/
 ## Run locally on Windows
 
 1. Extract the ZIP.
-2. Open the folder in VS Code.
-3. Open `index.html` directly, or use the **Live Server** extension.
-4. Keep the `assets`, `css` and `js` folders alongside `index.html`; the site uses relative paths.
+2. Open the extracted folder in VS Code.
+3. Open `index.html` directly, or use the Live Server extension.
+4. Keep `assets`, `css` and `js` next to `index.html`; the site uses relative paths.
 
 ## Deploy to Vercel
 
-1. Push the complete folder to a GitHub repository.
-2. In Vercel, import that repository.
-3. Select **Other** / static site if prompted.
-4. Leave the build command empty and use the project root as the output location.
-5. Deploy. This project has no build step.
+1. Push the **contents** of this folder to the GitHub repository connected to Vercel.
+2. In Vercel, import the repository or trigger a new deployment.
+3. Set the Root Directory to the folder containing `index.html`.
+4. Select the static/Other framework preset and leave build and install commands empty.
+5. Deploy, then hard-refresh the live page with `Ctrl + F5`.
 
-Official deployment guide: https://vercel.com/docs/deployments/overview
+## Project links
 
-## Live projects
-
-- **AgriPredict — Weather-Aware Market Trend Analysis for Crops:** https://weatheragripredict.streamlit.app/
-- **AI Health Chatbot:** https://disawachatbot.streamlit.app/
-
-## GitHub and professional links
-
+- AgriPredict: https://weatheragripredict.streamlit.app/
+- AI Health Chatbot: https://disawachatbot.streamlit.app/
 - GitHub: https://github.com/dhanush0823-git
 - LinkedIn: https://www.linkedin.com/in/dhanush-s-784190358/
-- Email: dhanushhemapriya0823@gmail.com
 
-## Content accuracy notes
+## Content note
 
-The content uses the supplied resume and GitHub README as source material. The resume lists **CGPA 8.05** and graduation year **2026**. Some project descriptions in the supplied GitHub README did not include a repository URL or a verifiable deployment URL; those cards are presented as summaries rather than inventing a link. Update the relevant card in `index.html` when a public repository becomes available.
-
-Before publishing, double-check contact details, dates, project claims and the downloadable resume. The resume is copied from the uploaded file as `assets/resume.pdf`.
+Content and metrics were based on the supplied resume and GitHub README. The resume lists graduation in 2026 and CGPA 8.05. Where a public project repository or deployment URL was not supplied, the card is presented as a project summary rather than inventing a link. Review dates and contact information before publishing.
