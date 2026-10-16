@@ -2,7 +2,8 @@ const $ = (selector, scope = document) => scope.querySelector(selector);
 const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
 
 document.addEventListener("DOMContentLoaded", () => {
-  const year = $("#year");\n  if (year) year.textContent = new Date().getFullYear();
+  const year = $("#year");
+  if (year) year.textContent = new Date().getFullYear();
 
   // Mobile navigation
   const menuToggle = $("#menuToggle");
@@ -38,7 +39,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, { threshold: 0.08 });
 
-  $$(".reveal").forEach(el => observer.observe(el));
+  $$(".reveal").forEach(el => {
+    el.classList.add("reveal-pending");
+    observer.observe(el);
+  });
 
   // Active navigation
   const sections = $$("main section[id]");
