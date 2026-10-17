@@ -1,31 +1,26 @@
-# Dhanush S — Signature Portfolio
+# Dhanush S — Data Science, ML & Applied GenAI Portfolio
 
-A responsive, static portfolio built with HTML, CSS and vanilla JavaScript. No framework, package installation or build command is required.
+A responsive static portfolio built with HTML, CSS and vanilla JavaScript. Designed with a dark, high-contrast interface, larger typography, an interactive skill studio, project filters, a RAG workflow, experience timeline and a credential viewer (including the VCodez internship experience PDF).
 
 ## Run locally
-
-Open `index.html` in a browser. For a more accurate local preview, use VS Code Live Server.
+Open `index.html` in your browser. For a local server, run `python -m http.server 8000` in this folder and visit `http://localhost:8000`.
 
 ## Deploy to Vercel
+Import the folder/repository into Vercel as a static site. No build command is required. Keep `index.html`, `css/`, `js/`, and `assets/` in the deployment root.
 
-1. Upload the contents of this folder to the root of the GitHub repository connected to Vercel.
-2. In Vercel, use **Other** as the framework preset if prompted.
-3. Leave the build command empty and use `.` as the output directory (or leave the default static output setting).
-4. Deploy, then hard-refresh the live site with `Ctrl + F5`.
+## Structure
+- `index.html` — page structure and content
+- `css/style.css` — original component styling
+- `css/premium.css` — dark theme, readable typography, responsive layout and Skill Studio styles
+- `js/main.js` — navigation, scroll progress, project filters, skills filters, copy action and credential viewer
+- `assets/` — profile photo, résumé, project previews, certificates and SVG logo
 
-## Included interactions
+## Interactions
+- Responsive mobile navigation and active section indicator
+- Scroll progress bar and reduced-motion support
+- Project filtering by category
+- Skill Studio filters for Data & Code, Analytics, ML & GenAI, and Tools
+- Copyable Python-style About panel
+- Image/PDF credential viewer
 
-- Responsive sticky navigation with active section state
-- Scroll progress indicator and accessible reveal effects
-- Project filters for GenAI, ML/NLP, analytics and automation
-- Copyable developer-style profile snippet
-- Certificate viewer for images and PDF files
-- Subtle hero pointer movement, reduced-motion support and keyboard dismissal
-
-## Assets
-
-The portfolio uses the supplied profile photo, résumé, project previews and certificate images. The VCodez Data Science internship experience letter supplied on 16 October 2026 is included as `assets/certificates/vcodez-data-science-internship.pdf` and appears in the Credentials section. Its letter states the internship was completed from July 2025 to October 2025.
-
-## Accuracy note
-
-The project cards describe the supplied project summaries. Resume–Job Matching and NLP Sentiment Analysis are presented as project summaries rather than linked repositories because no repository URLs were supplied for those items.
+Check the résumé and credential details before publishing; update any information that changes over time.

@@ -186,6 +186,27 @@
     });
   }
 
+  // Skill Studio: filter the skills dashboard by discipline.
+  const skillCards = $$('.skill-card[data-skill]');
+  const skillTabs = $$('.skill-tab[data-skill-filter]');
+  const skillCount = $('#skillVisibleCount');
+  skillTabs.forEach((tab) => tab.addEventListener('click', () => {
+    const filter = tab.dataset.skillFilter || 'all';
+    let visible = 0;
+    skillTabs.forEach((item) => {
+      const active = item === tab;
+      item.classList.toggle('active', active);
+      item.setAttribute('aria-selected', String(active));
+    });
+    skillCards.forEach((card) => {
+      const show = filter === 'all' || card.dataset.skill === filter;
+      card.classList.toggle('is-hidden', !show);
+      if (show) { visible += 1; card.style.animationDelay = `${Math.min(visible, 8) * 22}ms`; }
+      else card.style.animationDelay = '0ms';
+    });
+    if (skillCount) skillCount.textContent = String(visible);
+  }));
+
   const year = $('#year');
   if (year) year.textContent = new Date().getFullYear();
 })();
